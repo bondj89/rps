@@ -56,6 +56,10 @@ public class Arena {
     return safeCopy;
   }
 
+  public byte getNumBreeds() {
+    return numBreeds;
+  }
+
   private int wrap(int value) {
     value %= arenaSize;
     return (value >= 0) ? value : value + arenaSize;
@@ -72,6 +76,8 @@ public class Arena {
     }
     return comparison;
   }
+
+
 
   private enum Direction {
     NORTH(-1, 0),
